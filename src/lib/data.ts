@@ -20,6 +20,51 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "assassins-creed-codename-hexe",
+    title: "Assassin's Creed Codename HEXE",
+    tagline: "In development at Ubisoft Montreal",
+    description:
+      "Ubisoft Montreal's next flagship Assassin's Creed, currently in development. As a generalist programmer on the Anvil Engine team I build C++ ImGui debugging tools for gameplay and design, automated test suites that protect core systems, and pipeline tooling that keeps the production team moving.",
+    role: "Generalist Programmer",
+    engine: "Anvil Engine · C++",
+    year: "Jul 2024 – Present",
+    category: "studio",
+    image: "/images/ac-hexe.webp",
+    imageAlt: "Assassin's Creed Codename HEXE official teaser art from Ubisoft",
+    glyph: "AC",
+    gradient: "from-red-900/80 via-zinc-800/70 to-stone-700/80",
+    links: [{ label: "Read more on Ubisoft", href: "https://www.ubisoft.com/en-us/news/ignt.58630/assassin-s-creed-into-2026" }],
+    highlights: [
+      "C++ ImGui debugging tools accelerating iteration for gameplay & design",
+      "Automated test suites covering 3C, AI, UI, and combat",
+      "Cut build validation time by 3 hours per cycle",
+      "Prototyped LLM-based unit test generation with R&D",
+    ],
+    featured: true,
+  },
+  {
+    slug: "call-of-duty-warzone-mobile",
+    title: "Call of Duty: Warzone Mobile",
+    tagline: "Worldwide launch · Beenox / Activision",
+    description:
+      "Free-to-play Battle Royale for up to 120 players, launched worldwide in March 2024. During my gameplay programming internship at Beenox I improved Player 3C, core movement, weapon, and vehicle mechanics using C++ and Lua, worked on UI with in-house scripting tools, and helped fix issues affecting millions of players.",
+    role: "Gameplay Programmer Intern",
+    engine: "C++ · Lua",
+    year: "Jan – Apr 2024",
+    category: "studio",
+    image: "/images/warzone-mobile.webp",
+    imageAlt: "Call of Duty: Warzone Mobile official launch key art from Activision",
+    glyph: "WZM",
+    gradient: "from-amber-600/80 via-orange-600/70 to-red-500/80",
+    links: [{ label: "Official page", href: "https://www.callofduty.com/warzonemobile" }],
+    highlights: [
+      "Engaged in the worldwide launch, March 2024",
+      "Player 3C, core movement, weapons, vehicles, and UI",
+      "Fixed 15+ issues affecting 30M+ active players",
+    ],
+    featured: true,
+  },
+  {
     slug: "jumpin-jazz-cats",
     title: "Jumpin' Jazz Cats",
     tagline: "Online multiplayer party game · published by Team17",
