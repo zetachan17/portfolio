@@ -12,7 +12,17 @@ pnpm start      # serve the production build
 pnpm lint       # eslint
 ```
 
-> The project uses pnpm. If pnpm blocks `sharp`/`unrs-resolver` build scripts on a fresh install, they're already approved in `pnpm-workspace.yaml`.
+> Don't have pnpm? Use npm instead — the same scripts work:
+>
+> ```bash
+> npm install
+> npm run dev
+> npm run build
+> npm run start
+> npm run lint
+> ```
+>
+> Or install pnpm globally with `npm install -g pnpm`. If pnpm blocks `sharp`/`unrs-resolver` build scripts on a fresh install, they're already approved in `pnpm-workspace.yaml`.
 
 ## Where things live
 
