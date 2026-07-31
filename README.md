@@ -39,7 +39,7 @@ pnpm lint       # eslint
 
 - **Content**: edit `src/lib/data.ts` — every project card, job, skill, and social link is driven by it.
 - **Resume**: drop a new PDF over `public/Runze_Zhu_Resume.pdf`.
-- **Dates**: the Le Catnip Collective period (`2022 – 2023`) was inferred from the old site; adjust it in `src/lib/data.ts` if needed.
+- **Dates**: job history and dates come from the current resume — update `src/lib/data.ts` whenever it changes.
 - **Site URL**: set `NEXT_PUBLIC_SITE_URL` (e.g. `https://your-app.vercel.app`) so social/OG links resolve to your real domain. Falls back to `http://localhost:3000`.
 - **Artwork**: re-run the optimizer with any source folder containing the original files:
 

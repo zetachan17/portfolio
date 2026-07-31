@@ -4,6 +4,7 @@ import { Reveal } from "./reveal";
 import { Section, SectionHeading } from "./section";
 
 const nowPlaying = [
+  { label: "Working on", value: "Assassin’s Creed Hexe · Ubisoft Montreal" },
   { label: "Reading", value: "Crying in H Mart by Michelle Zauner", link: "https://www.goodreads.com/en/book/show/54814676" },
   { label: "Studying", value: "Computer graphics & engine internals" },
   { label: "Listening", value: "Taylor Swift, on loop, always" },
@@ -21,7 +22,7 @@ export function About() {
       <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
         <Reveal>
           <div className="relative mx-auto w-fit">
-            <div className="absolute -inset-4 rounded-3xl bg-linear-to-br from-violet-600/25 via-transparent to-cyan-500/25 blur-2xl" />
+            <div className="absolute -inset-4 rounded-3xl bg-linear-to-br from-emerald-600/25 via-transparent to-teal-500/25 blur-2xl" />
             <div className="relative rotate-[-2deg] rounded-xl border border-white/10 bg-white p-3 pb-4 shadow-2xl shadow-black/40 dark:bg-zinc-900">
               <Image
                 src="/images/about.webp"
@@ -56,10 +57,11 @@ export function About() {
                 citation, and a much longer shelf of unfinished games than I’d like to admit.
               </p>
               <p>
-                Since then I’ve built minigames in Unreal Engine 5 at Le Catnip Collective, survived an eight-month
-                internship at EA Motive, and learned more from game jams than most of my coursework. My comfort zone is
-                gameplay and UI programming — my curiosity lives in graphics, engines, and anything that makes a
-                controller vibrate at the right moment.
+                Now I’m a generalist programmer at Ubisoft Montreal, working on Assassin’s Creed Hexe. Before that I
+                helped launch Call of Duty: Warzone Mobile at Beenox, built Jumpin’ Jazz Cats in Unreal Engine 5 at Le
+                Catnip Collective, and survived an eight-month internship at EA Motive on the Iron Man title. My comfort
+                zone is gameplay and UI programming — my curiosity lives in graphics, engines, and anything that makes
+                a controller vibrate at the right moment.
               </p>
               <p>
                 Outside of code: I’m a Swiftie, a recovering vinyl collector, a semi-retired guitarist, and a firm
@@ -76,7 +78,7 @@ export function About() {
               <ul className="divide-y divide-white/5">
                 {nowPlaying.map((item) => (
                   <li key={item.label} className="flex flex-col gap-1 px-5 py-4 sm:flex-row sm:items-baseline sm:gap-4">
-                    <span className="w-24 shrink-0 font-mono text-xs tracking-wide text-violet-500 uppercase dark:text-violet-400">
+                    <span className="w-24 shrink-0 font-mono text-xs tracking-wide text-emerald-500 uppercase dark:text-emerald-400">
                       {item.label}
                     </span>
                     {item.link ? (
@@ -84,7 +86,7 @@ export function About() {
                         href={item.link}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-sm text-zinc-700 transition hover:text-violet-500 dark:text-zinc-300 dark:hover:text-violet-300"
+                        className="text-sm text-zinc-700 transition hover:text-emerald-500 dark:text-zinc-300 dark:hover:text-emerald-300"
                       >
                         {item.value} ↗
                       </a>

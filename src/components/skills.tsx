@@ -15,7 +15,7 @@ export function Skills() {
       <div className="grid gap-5 sm:grid-cols-2">
         {skillGroups.map((group, index) => (
           <Reveal key={group.label} delay={index * 0.06}>
-            <div className="h-full rounded-2xl border border-white/10 bg-white/60 p-6 backdrop-blur transition hover:border-cyan-500/30 dark:bg-white/[0.03]">
+            <div className="h-full rounded-2xl border border-white/10 bg-white/60 p-6 backdrop-blur transition hover:border-teal-500/30 dark:bg-white/[0.03]">
               <h3 className="mb-4 font-mono text-xs font-semibold tracking-[0.2em] text-zinc-500 uppercase dark:text-zinc-400">
                 {group.label}
               </h3>
@@ -23,7 +23,7 @@ export function Skills() {
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-sm text-zinc-700 transition hover:border-violet-500/40 hover:text-violet-600 dark:text-zinc-300 dark:hover:text-violet-300"
+                    className="rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-sm text-zinc-700 transition hover:border-emerald-500/40 hover:text-emerald-600 dark:text-zinc-300 dark:hover:text-emerald-300"
                   >
                     {skill}
                   </span>

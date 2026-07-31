@@ -29,7 +29,7 @@ body {
 }
 
 ::selection {
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(16, 185, 129, 0.35);
 }
 
 @keyframes blink {
@@ -56,8 +56,8 @@ body {
 
 .dark .bg-grid {
   background-image:
-    linear-gradient(to right, rgba(139, 92, 246, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(139, 92, 246, 0.08) 1px, transparent 1px);
+    linear-gradient(to right, rgba(16, 185, 129, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.08) 1px, transparent 1px);
 }
 
 @media (min-width: 768px) {
@@ -68,10 +68,10 @@ body {
     background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background: rgba(139, 92, 246, 0.25);
+    background: rgba(16, 185, 129, 0.25);
     border-radius: 999px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(139, 92, 246, 0.45);
+    background: rgba(16, 185, 129, 0.45);
   }
 }

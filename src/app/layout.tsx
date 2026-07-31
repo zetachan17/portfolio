@@ -27,11 +27,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Runze Zhu — Gameplay Programmer",
+    default: "Runze Zhu — Game Programmer",
     template: "%s — Runze Zhu",
   },
   description:
-    "Runze Zhu is a Montreal-based game developer specializing in gameplay and UI programming. Worked on Jumpin' Jazz Cats (Le Catnip Collective / Team17) and interned at EA Motive on the Iron Man title.",
+    "Runze Zhu is a Montreal-based game programmer at Ubisoft Montreal working on Assassin's Creed Hexe. Previously: Call of Duty: Warzone Mobile (Beenox), Jumpin' Jazz Cats (Le Catnip Collective), and Iron Man (EA Motive).",
   keywords: [
     "Runze Zhu",
     "game developer",
@@ -44,18 +44,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Runze Zhu", url: "https://github.com/zetachan17" }],
   openGraph: {
-    title: "Runze Zhu — Gameplay Programmer",
+    title: "Runze Zhu — Game Programmer",
     description:
-      "Montreal-based gameplay & UI programmer. Jumpin' Jazz Cats · EA Motive · Ubisoft Game Lab 2022 nominee.",
+      "Generalist programmer at Ubisoft Montreal · Assassin's Creed Hexe · Warzone Mobile · Jumpin' Jazz Cats.",
     type: "website",
     locale: "en_US",
     siteName: "runze.dev",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Runze Zhu — Gameplay Programmer",
+    title: "Runze Zhu — Game Programmer",
     description:
-      "Montreal-based gameplay & UI programmer. Jumpin' Jazz Cats · EA Motive · Ubisoft Game Lab 2022 nominee.",
+      "Generalist programmer at Ubisoft Montreal · Assassin's Creed Hexe · Warzone Mobile · Jumpin' Jazz Cats.",
   },
 };
 
@@ -74,9 +74,9 @@ export default function RootLayout({
         <ThemeProvider>
           <div aria-hidden="true" className="bg-grid pointer-events-none fixed inset-0 -z-10" />
           <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-            <div className="absolute -top-40 left-1/2 h-[480px] w-[720px] -translate-x-1/2 rounded-full bg-violet-600/15 blur-[120px] dark:bg-violet-600/25" />
-            <div className="absolute top-1/3 -left-40 h-[420px] w-[420px] rounded-full bg-cyan-500/10 blur-[120px] dark:bg-cyan-500/20" />
-            <div className="absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-fuchsia-600/10 blur-[120px] dark:bg-fuchsia-600/20" />
+            <div className="absolute -top-40 left-1/2 h-[480px] w-[720px] -translate-x-1/2 rounded-full bg-emerald-600/15 blur-[120px] dark:bg-emerald-600/25" />
+            <div className="absolute top-1/3 -left-40 h-[420px] w-[420px] rounded-full bg-teal-500/10 blur-[120px] dark:bg-teal-500/20" />
+            <div className="absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-lime-600/10 blur-[120px] dark:bg-lime-600/20" />
           </div>
           <Nav />
           <main>{children}</main>

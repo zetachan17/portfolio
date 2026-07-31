@@ -25,7 +25,7 @@ function ProjectCard({ project }: { project: Project }) {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/60 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-2xl hover:shadow-violet-500/10 dark:bg-white/[0.03]"
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/60 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/10 dark:bg-white/[0.03]"
     >
       <div className="relative aspect-video overflow-hidden">
         {project.image ? (
@@ -64,7 +64,7 @@ function ProjectCard({ project }: { project: Project }) {
             </span>
           ) : null}
           {project.featured ? (
-            <span className="inline-flex items-center gap-1 rounded-full bg-violet-500/80 px-2.5 py-1 font-mono text-[10px] font-semibold tracking-wider text-white uppercase backdrop-blur">
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/80 px-2.5 py-1 font-mono text-[10px] font-semibold tracking-wider text-white uppercase backdrop-blur">
               <Sparkles className="size-3" />
               Featured
             </span>
@@ -81,7 +81,7 @@ function ProjectCard({ project }: { project: Project }) {
         <p className="text-sm leading-6 text-zinc-600 dark:text-zinc-400">{project.description}</p>
 
         <div className="mt-4 flex flex-wrap gap-1.5">
-          <span className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-2.5 py-1 font-mono text-[11px] text-cyan-700 dark:text-cyan-300">
+          <span className="rounded-full border border-teal-500/30 bg-teal-500/10 px-2.5 py-1 font-mono text-[11px] text-teal-700 dark:text-teal-300">
             {project.engine}
           </span>
           {project.highlights.slice(0, 2).map((highlight) => (
@@ -101,7 +101,7 @@ function ProjectCard({ project }: { project: Project }) {
               href={link.href}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1 text-sm font-semibold text-violet-600 transition hover:text-cyan-500 dark:text-violet-300 dark:hover:text-cyan-300"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-emerald-600 transition hover:text-teal-500 dark:text-emerald-300 dark:hover:text-teal-300"
             >
               {link.label}
               <ArrowUpRight className="size-4" />
@@ -139,8 +139,8 @@ export function Projects() {
               className={cn(
                 "rounded-full border px-4 py-2 text-sm font-medium transition",
                 isActive
-                  ? "border-transparent bg-linear-to-r from-violet-600 to-cyan-500 text-white shadow-lg shadow-violet-500/25"
-                  : "border-white/10 bg-white/5 text-zinc-600 hover:border-violet-500/40 hover:text-violet-600 dark:text-zinc-400 dark:hover:text-violet-300",
+                  ? "border-transparent bg-linear-to-r from-emerald-600 to-teal-500 text-white shadow-lg shadow-emerald-500/25"
+                  : "border-white/10 bg-white/5 text-zinc-600 hover:border-emerald-500/40 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-300",
               )}
             >
               {category.label}

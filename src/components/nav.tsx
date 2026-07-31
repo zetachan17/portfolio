@@ -35,11 +35,11 @@ export function Nav() {
           className="group flex items-center gap-2 font-mono text-sm font-semibold tracking-tight text-zinc-900 dark:text-white"
           onClick={() => setOpen(false)}
         >
-          <span className="grid size-7 place-items-center rounded-lg bg-linear-to-br from-violet-500 to-cyan-400 text-[11px] font-bold text-white shadow-lg shadow-violet-500/25">
+          <span className="grid size-7 place-items-center rounded-lg bg-linear-to-br from-emerald-500 to-teal-400 text-[11px] font-bold text-white shadow-lg shadow-emerald-500/25">
             RZ
           </span>
           <span>
-            runze<span className="text-violet-500 dark:text-violet-400">.dev</span>
+            runze<span className="text-emerald-500 dark:text-emerald-400">.dev</span>
           </span>
         </Link>
 
@@ -57,7 +57,7 @@ export function Nav() {
             href={resumeHref}
             target="_blank"
             rel="noreferrer"
-            className="ml-2 rounded-full border border-violet-500/40 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-600 transition hover:bg-violet-500/20 dark:text-violet-300"
+            className="ml-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-600 transition hover:bg-emerald-500/20 dark:text-emerald-300"
           >
             Resume
           </a>
@@ -97,7 +97,7 @@ export function Nav() {
               href={resumeHref}
               target="_blank"
               rel="noreferrer"
-              className="mt-2 rounded-full border border-violet-500/40 bg-violet-500/10 px-4 py-2.5 text-center text-sm font-medium text-violet-600 dark:text-violet-300"
+              className="mt-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-4 py-2.5 text-center text-sm font-medium text-emerald-600 dark:text-emerald-300"
             >
               View Resume
             </a>

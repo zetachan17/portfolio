@@ -11,24 +11,24 @@ export function Contact() {
     <Section id="contact" className="pb-28 text-center sm:pb-36">
       <Reveal>
         <div className="mx-auto max-w-2xl">
-          <p className="mb-3 font-mono text-xs font-medium tracking-[0.25em] text-violet-500 uppercase dark:text-violet-400">
+          <p className="mb-3 font-mono text-xs font-medium tracking-[0.25em] text-emerald-500 uppercase dark:text-emerald-400">
             {"// contact"}
           </p>
           <h2 className="font-display text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-white">
             Let’s make something players{" "}
-            <span className="bg-linear-to-r from-violet-500 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-emerald-500 to-teal-400 bg-clip-text text-transparent">
               can’t put down.
             </span>
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-base leading-7 text-zinc-600 dark:text-zinc-400">
-            I’m open to gameplay, UI, and tools programming roles — or just a good conversation about why “one more
-            turn” is a lie. Email me, or find me wherever games people hang out.
+            I’m always happy to talk games — programming, engines, or why “one more turn” is a lie. Email me, or find
+            me wherever games people hang out.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <a
               href="mailto:zetachan17@gmail.com"
-              className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-violet-600 to-cyan-500 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-violet-500/30 transition hover:shadow-xl hover:shadow-cyan-500/30 hover:brightness-110"
+              className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-emerald-600 to-teal-500 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:shadow-xl hover:shadow-teal-500/30 hover:brightness-110"
             >
               <Mail className="size-4" />
               zetachan17@gmail.com

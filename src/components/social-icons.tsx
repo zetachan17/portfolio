@@ -41,7 +41,7 @@ export function SocialLinks({ className, iconClassName }: { className?: string; 
             aria-label={social.label}
             title={social.label}
             className={cn(
-              "grid size-10 place-items-center rounded-full border border-white/10 bg-white/5 text-zinc-500 transition hover:-translate-y-0.5 hover:border-violet-500/50 hover:text-violet-500 dark:text-zinc-400 dark:hover:text-violet-300",
+              "grid size-10 place-items-center rounded-full border border-white/10 bg-white/5 text-zinc-500 transition hover:-translate-y-0.5 hover:border-emerald-500/50 hover:text-emerald-500 dark:text-zinc-400 dark:hover:text-emerald-300",
               iconClassName,
             )}
           >

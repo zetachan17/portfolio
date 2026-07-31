@@ -24,20 +24,20 @@ export const projects: Project[] = [
     title: "Jumpin' Jazz Cats",
     tagline: "Online multiplayer party game · published by Team17",
     description:
-      "An online multiplayer party game by Le Catnip Collective where up to nine cats sprint, swing, and slide through a jazzy cartoon mansion. I worked on gameplay programming, UI, and the online side of the game in Unreal Engine 5 — it's out now on Steam.",
-    role: "Gameplay / UI / Online Programmer",
+      "An online multiplayer party game by Le Catnip Collective where up to nine cats sprint, swing, and slide through a jazzy cartoon mansion. As an Unreal developer I implemented the Gameplay Ability System on top of Lyra Starter Game, built UI and HUD in UMG, and created two new game modes — it's out now on Steam.",
+    role: "Unreal Developer",
     engine: "Unreal Engine 5",
-    year: "2022 – 2023",
+    year: "May – Aug 2023",
     category: "studio",
     image: "/images/jumpinjazzcats.webp",
     imageAlt: "Jumpin' Jazz Cats key art featuring cartoon cats in a mansion",
     glyph: "JJC",
-    gradient: "from-violet-600/80 via-fuchsia-600/70 to-pink-500/80",
+    gradient: "from-emerald-600/80 via-lime-600/70 to-teal-500/80",
     links: [{ label: "View on Steam", href: "https://store.steampowered.com/app/1951780/Jumping_Jazz_Cats/" }],
     highlights: [
-      "Gameplay and minigame programming in UE5",
-      "UI programming, HUD and player systems",
-      "Online multiplayer aspects of the game",
+      "Gameplay Ability System for player status & abilities (Lyra-based)",
+      "UI and HUD built in UMG",
+      "Created two new game modes",
       "Released on Steam under Team17",
     ],
     featured: true,
@@ -57,10 +57,10 @@ export const projects: Project[] = [
     glyph: "IM",
     gradient: "from-red-600/80 via-orange-600/70 to-amber-500/80",
     highlights: [
-      "Gameplay Ability System: health, shield, combat resources",
-      "Frostbite ECS: hit detection, finisher resources",
+      "Gameplay Ability System: character status & combat resources",
+      "Frostbite ECS: hit detection & skill resources",
+      "20+ gameplay tasks; prototype passed 10+ sprints",
       "UI work in UE5 and Frostbite, ImGui integration",
-      "Documented systems on Confluence for the team",
     ],
     featured: true,
   },
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     image: "/images/imminent.webp",
     imageAlt: "Imminent gameplay screenshot showing a grid and cards",
     glyph: "IM",
-    gradient: "from-cyan-600/80 via-sky-600/70 to-blue-500/80",
+    gradient: "from-teal-600/80 via-emerald-600/70 to-lime-500/80",
     links: [{ label: "More on itch.io", href: "https://zetachan.itch.io/" }],
     highlights: [
       "Nominated for Best Game Design and Best Art Direction & Production",
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     image: "/images/spaceriders.webp",
     imageAlt: "Space Rides gameplay screenshot with ships in space",
     glyph: "SR",
-    gradient: "from-indigo-600/80 via-violet-600/70 to-purple-500/80",
+    gradient: "from-teal-600/80 via-emerald-600/70 to-lime-500/80",
     links: [{ label: "More on itch.io", href: "https://zetachan.itch.io/" }],
     highlights: [
       "A* algorithm for AI pathfinding",
@@ -120,7 +120,7 @@ export const projects: Project[] = [
     year: "Sep – Dec 2022",
     category: "school",
     glyph: "WZ",
-    gradient: "from-emerald-600/80 via-teal-600/70 to-cyan-500/80",
+    gradient: "from-emerald-600/80 via-teal-600/70 to-lime-500/80",
     highlights: [
       "State machine driven game engine",
       "MVC architecture and Observer pattern logging",
@@ -187,7 +187,7 @@ export const projects: Project[] = [
     year: "Aug 2021",
     category: "school",
     glyph: "SHC",
-    gradient: "from-fuchsia-600/80 via-purple-600/70 to-violet-500/80",
+    gradient: "from-lime-600/80 via-green-600/70 to-emerald-500/80",
     highlights: [
       "Custom shaders for lighting and shadows",
       "Hierarchical modeling with OpenGL",
@@ -212,50 +212,67 @@ export interface ExperienceItem {
   description: string;
   highlights: string[];
   tags: string[];
+  current?: boolean;
 }
 
 export const experience: ExperienceItem[] = [
   {
-    company: "Le Catnip Collective",
-    role: "Gameplay / UI / Online Programmer",
-    period: "2022 – 2023",
+    company: "Ubisoft Montreal",
+    role: "Generalist Programmer",
+    period: "Jul 2024 – Present",
     location: "Montreal, QC",
     description:
-      "Gameplay, UI, and online programming on Jumpin' Jazz Cats, an online multiplayer party game built in Unreal Engine 5 and later published by Team17.",
+      "Working on Assassin's Creed Hexe in the Anvil Engine — tooling, testing, and gameplay support across the production team.",
     highlights: [
-      "Built gameplay and minigame systems in UE5",
-      "Owned UI programming and HUD systems",
-      "Worked on the online multiplayer side of the game",
+      "Developed and maintained C++ ImGui debugging tools, accelerating iteration for gameplay and design teams",
+      "Designed and maintained C++ automated test suites covering 3C, AI, UI, and combat systems",
+      "Integrated automated testing into the package approval pipeline, cutting build validation by 3 hours per cycle",
+      "Prototyped an LLM-based unit test generation framework with the R&D team",
     ],
-    tags: ["Unreal Engine 5", "Gameplay", "UI", "Online"],
+    tags: ["C++", "Anvil Engine", "ImGui", "Automated Testing"],
+    current: true,
   },
   {
-    company: "Motive Studio (EA)",
+    company: "Beenox · Activision",
+    role: "Gameplay Programmer Intern",
+    period: "Jan – Apr 2024",
+    location: "Montreal, QC",
+    description:
+      "Internship on Call of Duty: Warzone Mobile, engaged through its worldwide launch.",
+    highlights: [
+      "Improved Player 3C, core movement, weapon, and vehicle mechanics using C++ and Lua",
+      "Worked on UI with in-house scripting tools",
+      "Fixed 15+ issues affecting 30M+ active players",
+    ],
+    tags: ["C++", "Lua", "Call of Duty: Warzone Mobile"],
+  },
+  {
+    company: "Le Catnip Collective",
+    role: "Unreal Developer",
+    period: "May – Aug 2023",
+    location: "Montreal, QC",
+    description:
+      "Unreal development on Jumpin' Jazz Cats, an online multiplayer party game built in Unreal Engine 5 and later published by Team17.",
+    highlights: [
+      "Implemented the Gameplay Ability System for player status and abilities, based on Lyra Starter Game",
+      "Created UI and HUD in UMG",
+      "Built two new game modes and a foundation for future development",
+    ],
+    tags: ["Unreal Engine 5", "C++", "GAS", "UMG"],
+  },
+  {
+    company: "Motive Studio · EA",
     role: "Gameplay Programmer Intern",
     period: "Jan – Aug 2022",
     location: "Montreal, QC",
     description:
-      "Eight-month internship on the Iron Man title. Worked in C++ across Unreal Engine 5 and Frostbite, collaborating closely with the gameplay design team.",
+      "Eight-month internship prototyping the Iron Man title in C++ across Unreal Engine 5 and Frostbite.",
     highlights: [
-      "Implemented health, shield, and combat resources with the Gameplay Ability System",
-      "Used Frostbite ECS for hit detection and finisher resources",
-      "Created UI in UE5/Frostbite and helped integrate ImGui",
-      "Wrote Confluence documentation for the systems I built",
+      "Prototyped character status and combat resources with the Gameplay Ability System",
+      "Built hit detection and skill resources with Frostbite ECS",
+      "Finished 20+ gameplay tasks and helped the prototype pass 10+ sprints",
     ],
     tags: ["Unreal Engine 5", "Frostbite", "C++", "ECS", "GAS"],
-  },
-  {
-    company: "Matrox Graphics",
-    role: "Automation Software Developer Intern",
-    period: "Sep – Dec 2021",
-    location: "Dorval, QC",
-    description:
-      "Automation and tooling for hardware verification on the software team.",
-    highlights: [
-      "Developed Perl scripts for automated reporting",
-      "Built C# and Perl analysis tools to assist IC designers",
-    ],
-    tags: ["Perl", "C#", "Automation"],
   },
   {
     company: "Concordia University",
@@ -272,17 +289,19 @@ export const experience: ExperienceItem[] = [
 export const skillGroups: { label: string; skills: string[] }[] = [
   {
     label: "Languages",
-    skills: ["C++", "C#", "Python", "Perl"],
+    skills: ["C++", "C#", "Lua", "Go"],
   },
   {
     label: "Engines & APIs",
-    skills: ["Unreal Engine 5", "Unity", "Frostbite", "OpenGL"],
+    skills: ["Unreal Engine 5", "Unity", "Anvil Engine", "Frostbite", "OpenGL"],
   },
   {
     label: "Systems",
     skills: [
       "Gameplay Ability System",
       "ECS",
+      "Automated Testing",
+      "ImGui Debugging Tools",
       "Behavior Trees",
       "Steering Behaviors",
       "A* Pathfinding",
@@ -293,7 +312,7 @@ export const skillGroups: { label: string; skills: string[] }[] = [
   },
   {
     label: "Tools",
-    skills: ["Perforce", "Git", "Visual Studio", "JetBrains Rider", "ImGui", "Firebase", "LootLocker"],
+    skills: ["Perforce", "Git", "Visual Studio", "JetBrains Rider", "SQL", "Firebase", "LootLocker"],
   },
 ];
 

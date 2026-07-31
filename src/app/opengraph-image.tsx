@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Runze Zhu — Gameplay Programmer";
+export const alt = "Runze Zhu — Game Programmer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -24,10 +24,10 @@ export default function OpengraphImage() {
             position: "absolute",
             inset: 0,
             background:
-              "radial-gradient(ellipse 60% 50% at 20% 0%, rgba(139,92,246,0.35), transparent 60%), radial-gradient(ellipse 50% 40% at 90% 100%, rgba(34,211,238,0.25), transparent 60%)",
+              "radial-gradient(ellipse 60% 50% at 20% 0%, rgba(16,185,129,0.35), transparent 60%), radial-gradient(ellipse 50% 40% at 90% 100%, rgba(45,212,191,0.25), transparent 60%)",
           }}
         />
-        <div style={{ display: "flex", alignItems: "center", gap: 16, fontFamily: "monospace", fontSize: 28, color: "#a78bfa" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 16, fontFamily: "monospace", fontSize: 28, color: "#34d399" }}>
           <span>$</span>
           <span>~/portfolio</span>
         </div>
@@ -45,7 +45,7 @@ export default function OpengraphImage() {
           <span>Runze Zhu</span>
           <span
             style={{
-              background: "linear-gradient(90deg,#a78bfa,#22d3ee)",
+              background: "linear-gradient(90deg,#34d399,#2dd4bf)",
               WebkitBackgroundClip: "text",
               color: "transparent",
             }}
@@ -54,7 +54,7 @@ export default function OpengraphImage() {
           </span>
         </div>
         <div style={{ marginTop: 32, color: "#a1a1aa", fontSize: 28 }}>
-          Gameplay &amp; UI programmer · UE5 · Unity · Frostbite
+          Generalist programmer · UE5 · Anvil · Frostbite
         </div>
       </div>
     ),

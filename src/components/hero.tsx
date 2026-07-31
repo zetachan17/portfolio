@@ -7,12 +7,12 @@ import { Reveal } from "./reveal";
 import { SocialLinks } from "./social-icons";
 
 const terminalLines = [
-  { prompt: "whoami", output: "gameplay programmer" },
-  { prompt: "cat engines.txt", output: "ue5 · unity · frostbite · opengl" },
-  { prompt: "./status --now", output: "studying graphics & engine internals" },
+  { prompt: "whoami", output: "generalist programmer" },
+  { prompt: "cat engines.txt", output: "ue5 · anvil · unity · frostbite" },
+  { prompt: "./status --now", output: "generalist programmer @ ubisoft montreal" },
 ];
 
-const statChips = ["Concordia CS '23", "Ubisoft Game Lab 2022 nominee", "GGJ 2023", "EA Motive alum"];
+const statChips = ["Ubisoft Montreal", "Warzone Mobile launch", "Concordia CS '23", "GGJ 2023"];
 
 export function Hero() {
   return (
@@ -25,14 +25,14 @@ export function Hero() {
                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
               </span>
-              Open to opportunities · Montreal, QC
+              Currently: Generalist Programmer · Ubisoft Montreal
             </div>
           </Reveal>
 
           <Reveal delay={0.08}>
             <h1 className="font-display text-5xl font-bold tracking-tight text-zinc-900 sm:text-6xl lg:text-7xl dark:text-white">
               Runze Zhu
-              <span className="block bg-linear-to-r from-violet-500 via-fuchsia-500 to-cyan-400 bg-clip-text text-transparent">
+              <span className="block bg-linear-to-r from-emerald-500 via-lime-500 to-teal-400 bg-clip-text text-transparent">
                 makes games feel good.
               </span>
             </h1>
@@ -40,9 +40,10 @@ export function Hero() {
 
           <Reveal delay={0.16}>
             <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-              I’m a Montreal-based gameplay programmer who’s shipped an online multiplayer party game, interned at EA
-              Motive on an Iron Man title, and filled a shelf with jam games. I specialize in gameplay and UI
-              programming, and I’m always poking at graphics and engine internals.
+              I’m a Montreal-based game programmer currently working on Assassin’s Creed Hexe at Ubisoft Montreal.
+              Before that I helped launch Call of Duty: Warzone Mobile at Beenox, built Jumpin’ Jazz Cats at Le Catnip
+              Collective, and interned at EA Motive on the Iron Man title. I love gameplay and UI programming, and I’m
+              always poking at graphics and engine internals.
             </p>
           </Reveal>
 
@@ -50,7 +51,7 @@ export function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 href="#projects"
-                className="rounded-full bg-linear-to-r from-violet-600 to-cyan-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/30 transition hover:shadow-xl hover:shadow-cyan-500/30 hover:brightness-110"
+                className="rounded-full bg-linear-to-r from-emerald-600 to-teal-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:shadow-xl hover:shadow-teal-500/30 hover:brightness-110"
               >
                 View projects
               </Link>
@@ -88,7 +89,7 @@ export function Hero() {
 
         <Reveal delay={0.2} className="hidden lg:block">
           <div className="relative">
-            <div className="absolute -inset-6 rounded-3xl bg-linear-to-br from-violet-600/20 via-transparent to-cyan-500/20 blur-2xl" />
+            <div className="absolute -inset-6 rounded-3xl bg-linear-to-br from-emerald-600/20 via-transparent to-teal-500/20 blur-2xl" />
             <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#0a0915]/90 shadow-2xl shadow-black/40 backdrop-blur">
               <div className="flex items-center gap-1.5 border-b border-white/5 px-4 py-3">
                 <span className="size-3 rounded-full bg-red-500/80" />
@@ -101,19 +102,19 @@ export function Hero() {
                   <div key={line.prompt}>
                     <p>
                       <span className="text-emerald-400">➜</span>{" "}
-                      <span className="text-violet-400">~/portfolio</span>{" "}
+                      <span className="text-emerald-400">~/portfolio</span>{" "}
                       <span className="text-zinc-200">{line.prompt}</span>
                     </p>
                     <p className="text-zinc-400">{line.output}</p>
                   </div>
                 ))}
                 <p>
-                  <span className="text-emerald-400">➜</span> <span className="text-violet-400">~/portfolio</span>{" "}
-                  <span className="inline-block h-4 w-2 translate-y-0.5 animate-blink bg-cyan-400" />
+                  <span className="text-emerald-400">➜</span> <span className="text-emerald-400">~/portfolio</span>{" "}
+                  <span className="inline-block h-4 w-2 translate-y-0.5 animate-blink bg-teal-400" />
                 </p>
                 <div className="mt-2 border-t border-white/5 pt-4 text-xs text-zinc-500">
                   <p>
-                    <span className="text-cyan-400">#</span> fun fact: swiftie since day one
+                    <span className="text-teal-400">#</span> fun fact: swiftie since day one
                   </p>
                 </div>
               </div>
@@ -125,7 +126,7 @@ export function Hero() {
       <a
         href="#about"
         aria-label="Scroll to about section"
-        className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 text-zinc-400 transition hover:text-violet-400 md:block"
+        className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 text-zinc-400 transition hover:text-emerald-400 md:block"
       >
         <ArrowDown className="size-5 animate-bounce" />
       </a>
