@@ -114,7 +114,7 @@ export function Hero() {
                 </p>
                 <div className="mt-2 border-t border-white/5 pt-4 text-xs text-zinc-500">
                   <p>
-                    <span className="text-teal-400">#</span> fun fact: swiftie since day one
+                    <span className="text-teal-400">#</span> fun fact: still buying vinyl I definitely have room for
                   </p>
                 </div>
               </div>

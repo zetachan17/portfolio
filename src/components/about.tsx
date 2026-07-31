@@ -7,7 +7,7 @@ const nowPlaying = [
   { label: "Working on", value: "Assassin’s Creed Hexe · Ubisoft Montreal" },
   { label: "Reading", value: "Crying in H Mart by Michelle Zauner", link: "https://www.goodreads.com/en/book/show/54814676" },
   { label: "Studying", value: "Computer graphics & engine internals" },
-  { label: "Listening", value: "Taylor Swift, on loop, always" },
+  { label: "Listening", value: "whatever’s on the turntable" },
 ];
 
 export function About() {
@@ -64,8 +64,8 @@ export function About() {
                 a controller vibrate at the right moment.
               </p>
               <p>
-                Outside of code: I’m a Swiftie, a recovering vinyl collector, a semi-retired guitarist, and a firm
-                believer that going to live shows is a valid personality trait.
+                Outside of code: I’m a recovering vinyl collector, a semi-retired guitarist, and a firm believer that
+                going to live shows is a valid personality trait.
               </p>
             </div>
           </Reveal>

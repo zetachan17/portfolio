@@ -6,7 +6,7 @@ export function Footer() {
           © {new Date().getFullYear()} Runze Zhu · game programmer
         </p>
         <p className="font-mono text-xs text-zinc-500 dark:text-zinc-500">
-          built with next.js + tailwind · swiftie mode: <span className="text-pink-500">on</span> 🎵
+          built with next.js + tailwind · game dev by day, vinyl by night
         </p>
       </div>
     </footer>

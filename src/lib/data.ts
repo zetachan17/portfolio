@@ -371,7 +371,7 @@ export const socials: SocialLink[] = [
   { label: "GitHub", href: "https://github.com/zetachan17", handle: "@zetachan17" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/runzezhu/", handle: "in/runzezhu" },
   { label: "itch.io", href: "https://zetachan.itch.io/", handle: "zetachan" },
-  { label: "Spotify", href: "https://open.spotify.com/user/mu83fj9jr919d2nedm9n8xdkx", handle: "swiftie mode" },
+  { label: "Spotify", href: "https://open.spotify.com/user/mu83fj9jr919d2nedm9n8xdkx", handle: "my spotify" },
   { label: "Email", href: "mailto:zetachan17@gmail.com", handle: "zetachan17@gmail.com" },
 ];
 
