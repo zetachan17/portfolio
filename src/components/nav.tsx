@@ -39,7 +39,7 @@ export function Nav() {
             RZ
           </span>
           <span>
-            runze<span className="text-emerald-500 dark:text-emerald-400">.dev</span>
+            rzhu<span className="text-emerald-500 dark:text-emerald-400">.ca</span>
           </span>
         </Link>
 

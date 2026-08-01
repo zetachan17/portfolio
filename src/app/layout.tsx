@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://rzhu.ca";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Generalist programmer at Ubisoft Montreal · Assassin's Creed Hexe · Warzone Mobile · Jumpin' Jazz Cats.",
     type: "website",
     locale: "en_US",
-    siteName: "runze.dev",
+    siteName: "rzhu.ca",
   },
   twitter: {
     card: "summary_large_image",
