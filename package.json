@@ -2,10 +2,11 @@
   "name": "runze-portfolio",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@11.9.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx --yes serve out",
     "lint": "eslint",
     "images:optimize": "node scripts/optimize-images.mjs"
   },
